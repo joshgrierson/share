@@ -1,0 +1,9 @@
+{
+  "name": "share",
+  "version": "1.0.0",
+  "description": "Sharing of commonly used code",
+  "main": "index.js",
+  "repository": "https://bitbucket.org/encreddesign/share",
+  "author": "Joshua Grierson",
+  "license": "MIT"
+}
