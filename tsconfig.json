@@ -8,12 +8,8 @@
         "esModuleInterop": true,
         "sourceMap": true,
         "types": ["node"],
-        "lib": ["es2015", "es2016", "ES2015.Promise"],
-        "baseUrl": "lib"
+        "lib": ["es2015", "es2016", "ES2015.Promise"]
     },
-    "include": [
-        "lib/**/*.ts"
-    ],
     "exclude": [
         "node_modules",
         "dist"
