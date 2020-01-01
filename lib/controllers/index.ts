@@ -1,5 +1,5 @@
 import { Response } from "express";
-import ServiceError from "../error";
+import { ServiceError } from "../error";
 import { Services, ServiceMethod, ServiceStatus, ResponseOutput } from "../models";
 import { Service } from "../services";
 
