@@ -34,3 +34,9 @@ export interface ResponseOutput {
     count?: number;
     path: string;
 }
+
+export enum RedisEventType {
+    error="error",
+    connect="connect",
+    reconnecting="reconnecting"
+}
