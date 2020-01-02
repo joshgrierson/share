@@ -8,9 +8,9 @@ export default async function setupRedis(options: RedisOptions): Promise<Redis.R
         if (type === RedisEventType.error) {
             console.error(`Redis error occurred: ${err}`);
         } else if (type === RedisEventType.connect) {
-            console.log(`Redis connected to: ${process.env.REDIS_HOST}:${process.env.REDIS_PORT}`);
+            console.log(`Redis connected to: ${options.host}:${options.port}`);
         } else if (type === RedisEventType.reconnecting) {
-            console.log(`Redis reconnecting to server: ${process.env.REDIS_HOST}:${process.env.REDIS_PORT}`);
+            console.log(`Redis reconnecting to server: ${options.host}:${options.port}`);
         }
     }
 
