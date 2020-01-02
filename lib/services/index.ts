@@ -2,6 +2,7 @@ import { Redis } from "ioredis";
 
 export abstract class Service {
     protected domain: string;
+    protected data: any;
 
     public constructor(protected tag: string, public schema: {[key: string]: any}) {}
 
@@ -32,5 +33,9 @@ export abstract class Service {
 
     public setDomain(domain: string): void {
         this.domain = domain;
+    }
+
+    public setData(...args: any): void {
+        this.data = args;
     }
 }
