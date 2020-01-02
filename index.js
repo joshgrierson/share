@@ -7,4 +7,5 @@ __export(require("./lib/models"));
 __export(require("./lib/services"));
 __export(require("./lib/controllers"));
 __export(require("./lib/error"));
+__export(require("./lib/helpers"));
 //# sourceMappingURL=index.js.map

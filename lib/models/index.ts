@@ -1,5 +1,9 @@
 import { Service } from "../services";
 
+interface Model {
+    uid?: string;
+}
+
 export enum ServiceStatus {
     NotFound=404,
     OK=200,
@@ -39,4 +43,15 @@ export enum RedisEventType {
     error="error",
     connect="connect",
     reconnecting="reconnecting"
+}
+
+export enum ConditionType {
+    location="location",
+    weather="weather",
+    userAgent="user-agent"
+}
+
+export interface Condition extends Model {
+    type: ConditionType;
+    value: string;
 }
