@@ -14,7 +14,7 @@ export abstract class Controller {
         return this.services[this.service] !== undefined;
     }
 
-    public getService(): Service {
+    public getService(): Service<any> {
         return this.services[this.service];
     }
 

@@ -29,7 +29,7 @@ export interface ShopifyProductBase {
 }
 
 export interface Services {
-    [key: string]: Service;
+    [key: string]: Service<any>;
 }
 
 export interface ResponseOutput {

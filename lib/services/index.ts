@@ -1,6 +1,6 @@
 import { Redis } from "ioredis";
 
-export abstract class Service {
+export abstract class Service<T> {
     protected domain: string;
     protected data: any;
 
@@ -10,7 +10,7 @@ export abstract class Service {
         console.log("%s: %s", this.tag, message);
     }
 
-    abstract async exec(payload: {[key: string]: any}, redis: Redis): Promise<any>;
+    abstract async exec(payload: T, redis: Redis): Promise<any>;
 
     public validateSchema(entity: any): boolean {
         const keys: Array<string> = Object.keys(this.schema);
